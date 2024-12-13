@@ -1,0 +1,46 @@
+body {
+    margin: 0; /* Remove default margins to make the gradient cover the entire page */
+    height: 100vh; /* Ensure the gradient spans the full viewport height */
+    background: linear-gradient(to bottom, #e0b3ff, #4c0080); /* Gradient from light purple to dark purple */
+    font-family: Arial, sans-serif; /* Set the font style */
+    display: flex; /* For centering content, if needed */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: #fff; /* Optional: Makes text readable against the purple gradient */
+}
+
+
+.page-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-style: italic;
+    font-size: 1.5em;
+    -webkit-text-stroke: 2px #e47712; /* Adjust the font size as needed */
+    text-shadow: 
+        1px 1px 0 #000, /* Top-left shadow */
+        -1px -1px 0 #000, /* Bottom-right shadow */
+        -1px 1px 0 #000, /* Top-right shadow */
+        1px -1px 0 #000; /* Bottom-left shadow */
+    
+}
+
+.title-line {
+    position: absolute;
+    top: 60px; /* Adjust based on the title height */
+    left: 0;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000; /* Adds the line */
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-width: 0cap;
+    color: #ffdb58;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
