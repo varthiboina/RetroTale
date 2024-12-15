@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/mainpagestyle_c.css">
+    <style>
+        /* Styling for the theme selector */
+        .theme-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .theme-selector select {
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 2px solid #000;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .theme-selector button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 2px solid #000;
+            background-color: #000;
+            color: white;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .theme-selector button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Title with Logo -->
+    <div class="page-title">
+        <span><i><div class="logo"><%= logoText %></div></i></span>
+    </div>
+    <hr class="title-line">
+   
+    <div class="theme-selector">
+        <label for="theme" style="font-family: 'Courier New', Courier, monospace;">Theme:</label>
+        <select id="theme" onchange="changeTheme(this.value)">
+            <option value="classic" <%= theme === "classic" ? "selected" : "" %>>Classic</option>
+            <option value="retro" <%= theme === "retro" ? "selected" : "" %>>Retro</option>
+        </select>
+    </div>
+    <!-- Login and Signup Container -->
+    <div class="form-container">
+        <!-- Login Form -->
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
+            </form>
+        </div>
+
+        <script>
+             function signup() {
+            return null;
+        }
+        function login() {
+            return null;
+        }
+
+        function changeTheme(theme) {
+            // Set the theme value in localStorage (or send it to the backend if needed)
+            document.cookie = "selectedTheme=" + theme;
+        location.reload();
+
+        }
+        </script>
+       
+    </div>
+</body>
+</html>  

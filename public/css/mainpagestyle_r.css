@@ -44,3 +44,28 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.button
+{
+    font-family: 'Courier New', Courier, monospace; /* Retro font */
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ef9313; /* Tomato red */
+            border: 2px solid #000; /* Bold black border */
+            width: 100px;
+            height: 40px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0px #000; /* Text shadow for a 3D effect */
+            box-shadow: 2px 2px 0px #000; /* Button shadow for depth */
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+}
+.button-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Prevent stretching horizontally */
+
+
+}
+

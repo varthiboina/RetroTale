@@ -1,0 +1,145 @@
+/* Global Body Style */
+body {
+    margin: 0; /* Remove default margins to make the gradient cover the entire page */
+    height: 100vh; /* Ensure the gradient spans the full viewport height */
+    background: linear-gradient(to bottom, #000, #1a1a1a); /* Gradient from black to dark grey */
+    font-family: 'Orbitron', Arial, sans-serif; /* Futuristic font */
+    display: flex; /* For centering content, if needed */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: #fff; /* Makes text readable against the dark gradient */
+}
+
+/* Page Title and Logo */
+.page-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-style: italic;
+    font-size: 1.8em;
+    -webkit-text-stroke: 1px #00ffff; /* Light cyan outline for a neon effect */
+    color: #0ff; /* Cyan inner text for the title */
+    text-shadow: 
+        0 0 10px #00ffff, /* Neon glow */
+        0 0 20px #00ffff, 
+        0 0 30px #00ffff;
+}
+
+/* Title Line */
+.title-line {
+    position: absolute;
+    top: 60px; /* Adjust based on the title height */
+    left: 0;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #333; /* Subtle dark line for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e0e309; /* Bright neon yellow */
+}
+
+.logo:hover {
+    color: #fff;
+    text-shadow: 
+        0 0 10px     #e0e309, 
+        0 0 20px     #e0e309, 
+        0 0 30px     #e0e309; /* Enhanced neon effect on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    transition: all 0.3s ease;
+}
+
+/* Form Container */
+.form-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center */
+    align-items: center; 
+    width: 60%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 30px;
+    box-shadow: 0 1px 100px rgba(6, 216, 235, 0.3);
+    border-radius: 10px;
+}
+/* Form Box Styles */
+.form-box {
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #1a1a1a; /* Dark background for form */
+}
+
+/* Form Title */
+.form-box h2 {
+    font-size: 1.8em;
+    color: #0ff; /* Cyan color for text */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Styles */
+input {
+    width: 92%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #222; /* Dark background for inputs */
+    color: #fff; /* White text inside input */
+    font-size: 16px;
+    transition: border-color 0.3s ease
+}
+
+input:focus {
+    border-color: #00ffff; /* Neon cyan border on focus */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ffff; /* Neon cyan button */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0ff;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Link Styles */
+.signup-link, .login-link {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
